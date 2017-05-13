@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multiLevelDungGameTEST.CSharp.Plugins", "multiLevelDungGameTEST.CSharp.Plugins.csproj", "{477479C7-F018-F28F-4770-B6AC2F76AF10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multiLevelDungGameTEST.CSharp", "multiLevelDungGameTEST.CSharp.csproj", "{3067CDA7-EC38-BB03-DBFA-7DEB01DD30F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "multiLevelDungGameTEST.CSharp.Editor.Plugins", "multiLevelDungGameTEST.CSharp.Editor.Plugins.csproj", "{845D5107-FF86-3CFC-FE03-D3723228A9F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{477479C7-F018-F28F-4770-B6AC2F76AF10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{477479C7-F018-F28F-4770-B6AC2F76AF10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{477479C7-F018-F28F-4770-B6AC2F76AF10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{477479C7-F018-F28F-4770-B6AC2F76AF10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3067CDA7-EC38-BB03-DBFA-7DEB01DD30F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3067CDA7-EC38-BB03-DBFA-7DEB01DD30F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3067CDA7-EC38-BB03-DBFA-7DEB01DD30F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3067CDA7-EC38-BB03-DBFA-7DEB01DD30F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{845D5107-FF86-3CFC-FE03-D3723228A9F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{845D5107-FF86-3CFC-FE03-D3723228A9F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{845D5107-FF86-3CFC-FE03-D3723228A9F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{845D5107-FF86-3CFC-FE03-D3723228A9F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
