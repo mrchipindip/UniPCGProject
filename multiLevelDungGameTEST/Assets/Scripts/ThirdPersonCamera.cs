@@ -60,6 +60,7 @@ public class ThirdPersonCamera : MonoBehaviour
 
         //make camera look in correct direction
         transform.LookAt(follow);
+      
 
     }
 }

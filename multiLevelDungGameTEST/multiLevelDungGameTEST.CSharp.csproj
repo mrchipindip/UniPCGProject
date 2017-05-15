@@ -87,6 +87,9 @@
     <Compile Include="Assets\Scripts\ModularWorldGenerator.cs" />
     <Compile Include="Assets\Scripts\Module.cs" />
     <Compile Include="Assets\Scripts\ModuleConnector.cs" />
+    <Compile Include="Assets\Scripts\PowerUpActivate.cs" />
+    <Compile Include="Assets\Scripts\PowerUpPickup.cs" />
+    <Compile Include="Assets\Scripts\SkelController.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
   </ItemGroup>
   <ItemGroup>

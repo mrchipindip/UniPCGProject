@@ -12,14 +12,22 @@ public class CharacterBehaviour : MonoBehaviour
     Animator charAnim;
     bool jumping = false;
     bool swinging = false;
+    bool damageSend = true;
     bool combo1Available = false;
     bool combo1InUse = false;
     bool combo2Available = false;
     bool combo2InUse = false;
 
+    List<Collider> enemColliders;
+
+    public float playerHealth = 100.0f;
+    public bool playerShield = false;
+    public float playerDamage = 20.0f;
+
     void Awake()
     {
         charAnim = GetComponent<Animator>();
+        enemColliders = new List<Collider>();
     }
 
     void Update()
@@ -31,6 +39,11 @@ public class CharacterBehaviour : MonoBehaviour
         ComboOne();
         ComboTwo();
         Blocking();
+
+        if (swinging == true && damageSend == true)
+        {
+            SendDamage();
+        }
     }
 
     void Turn()
@@ -136,6 +149,7 @@ public class CharacterBehaviour : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         swinging = false;
+        damageSend = true;
         if (combo1InUse == false && combo2InUse == false)
         {
             combo1Available = true;
@@ -177,4 +191,30 @@ public class CharacterBehaviour : MonoBehaviour
             charAnim.SetBool("Blocking", false);
         }
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            enemColliders.Add(other);     
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            enemColliders.Remove(other);
+        }
+    }
+
+    void SendDamage()
+    {
+        damageSend = false;
+        foreach(Collider o in enemColliders)
+        {
+            o.gameObject.SendMessage("TakeDamage", playerDamage);
+        }
+    }
+
 }
