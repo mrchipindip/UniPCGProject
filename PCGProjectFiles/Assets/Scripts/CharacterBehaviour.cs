@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 [DisallowMultipleComponent] //prevents it from being attached to more than one gameobjcet
@@ -22,6 +23,7 @@ public class CharacterBehaviour : MonoBehaviour
 
     public float playerHealth = 100.0f;
     public bool playerShield = false;
+    public int shieldCount = 0;
     public float playerDamage = 20.0f;
 
     void Awake()
@@ -39,7 +41,7 @@ public class CharacterBehaviour : MonoBehaviour
         ComboOne();
         ComboTwo();
         Blocking();
-
+        IsDead();
         if (swinging == true && damageSend == true)
         {
             SendDamage();
@@ -88,7 +90,7 @@ public class CharacterBehaviour : MonoBehaviour
 
     void DamageRecieved()
     {
-        charAnim.SetTrigger("Damaged");
+        charAnim.SetTrigger("DamageTaken");
     }
 
     void PowerUpCollected()
@@ -196,7 +198,7 @@ public class CharacterBehaviour : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            enemColliders.Add(other);     
+            enemColliders.Add(other);
         }
     }
 
@@ -211,10 +213,36 @@ public class CharacterBehaviour : MonoBehaviour
     void SendDamage()
     {
         damageSend = false;
-        foreach(Collider o in enemColliders)
+        foreach (Collider o in enemColliders)
         {
             o.gameObject.SendMessage("TakeDamage", playerDamage);
         }
     }
 
+    void TakeDamage(float damage)
+    {
+
+        if (playerShield == true && shieldCount > 0)
+        {
+            shieldCount -= 1;
+            DamageRecieved();
+        }
+        else
+        {
+            playerHealth -= damage;
+            DamageRecieved();
+        }
+    }
+
+    void IsDead()
+    {
+        if (playerHealth <= 0)
+        {
+            charAnim.SetBool("IsDead", true);
+            SceneManager.LoadScene("MainMenu");
+
+        }
+    }
 }
+
+

@@ -9,6 +9,9 @@ public class SkelController : MonoBehaviour {
     public float health = 60.0f;
     public float damage = 10.0f;
 
+    private bool atkInProg = false;
+    private int atkCounter = 0;
+
     bool dead = false;
 
 	// Use this for initialization
@@ -73,6 +76,8 @@ public class SkelController : MonoBehaviour {
             {
                 skelAnim.SetBool("Walking", false);
                 skelAnim.SetBool("Attacking", true);
+                atkInProg = true;
+                StartCoroutine(DelayFirstSwing());
             }
         }
         else
@@ -94,4 +99,31 @@ public class SkelController : MonoBehaviour {
         }
 
     }
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            if(atkInProg != true)
+            {
+                Debug.Log("Hit");
+                atkInProg = true;
+                other.gameObject.SendMessage("TakeDamage", damage);
+                StartCoroutine(WaitTime());
+            }
+            
+        }
+    }
+
+    IEnumerator WaitTime()
+    {
+        yield return new WaitForSeconds(2.5f);
+        atkInProg = false;
+    }
+
+    IEnumerator DelayFirstSwing()
+    {
+        yield return new WaitForSeconds(1.0f);
+        atkInProg = false;
+    }
+
 }

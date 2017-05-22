@@ -34,6 +34,7 @@ public class PowerUpActivate : MonoBehaviour {
         else if (powerNum == 2)
         {
             charMovementScript.playerShield = true;
+            charMovementScript.shieldCount += 2;
             StartCoroutine(ShieldTimeout());
         }
         else
@@ -47,6 +48,7 @@ public class PowerUpActivate : MonoBehaviour {
     {
         yield return new WaitForSeconds(20);
         charMovementScript.playerShield = false;
+        charMovementScript.shieldCount = 0;
     }
 
     IEnumerator DamageTimeout()

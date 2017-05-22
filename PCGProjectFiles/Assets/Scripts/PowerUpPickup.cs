@@ -21,7 +21,7 @@ public class PowerUpPickup : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.E) && playerWithinTrigger == true)
+        if (Input.GetKeyDown(KeyCode.Joystick1Button3) && playerWithinTrigger == true)
         {
             player.SendMessage("Powerup", activePower);
             soundToPlay.Play();

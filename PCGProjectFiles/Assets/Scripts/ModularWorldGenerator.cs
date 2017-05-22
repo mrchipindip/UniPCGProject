@@ -8,6 +8,7 @@ public class ModularWorldGenerator : MonoBehaviour
     public Module exitCloser;
     public Module endRoom;
 	public Module StartModule;
+    public Module StartingRoom;
 
 	public int Iterations = 5;
 
@@ -16,7 +17,8 @@ public class ModularWorldGenerator : MonoBehaviour
     void Start()
     {
         //Instan a starting mdule
-        var startModule = (Module)Instantiate(StartModule, transform.position, transform.rotation);
+        //var startModule = (Module)Instantiate(StartModule, transform.position, transform.rotation);
+        var startModule = StartingRoom;
         var pendingExits = new List<ModuleConnector>(startModule.GetExits());
 
         List<Module> allRooms = new List<Module>();

@@ -104,7 +104,7 @@ public class NPCFollowPlayer : MonoBehaviour {
 
 		RaycastHit hit;
 
-		float shoulderMultiplyer = 0.75f;
+		float shoulderMultiplyer = 0.4f;
 		Vector3 leftRayPos = myTransform.position - (myTransform.right * shoulderMultiplyer);
 		Vector3 rightRayPos = myTransform.position + (myTransform.right * shoulderMultiplyer);
 
