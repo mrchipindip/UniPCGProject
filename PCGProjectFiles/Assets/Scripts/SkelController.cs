@@ -40,25 +40,25 @@ public class SkelController : MonoBehaviour {
         float viewAngle = Vector3.Angle(direction, this.transform.forward);
         if (Vector3.Distance(player.position, this.transform.position) < 5 && viewAngle < 30)
         {
-            
+
             direction.y = 0;
 
             this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
 
-            skelAnim.SetBool("Idle", false);
+        skelAnim.SetBool("Idle", false);
 
-            if (direction.magnitude > 1.5f)
-            {
-                this.transform.Translate(0, 0, 0.007f);
-                skelAnim.SetBool("Walking", true);
-                skelAnim.SetBool("Attacking", false);
-            }
-            else
-            {
-                skelAnim.SetBool("Walking", false);
-                skelAnim.SetBool("Attacking", true);
-            }
+        if (direction.magnitude > 1.5f)
+        {
+            this.transform.Translate(0, 0, 0.007f);
+            skelAnim.SetBool("Walking", true);
+            skelAnim.SetBool("Attacking", false);
         }
+        else
+        {
+            skelAnim.SetBool("Walking", false);
+            skelAnim.SetBool("Attacking", true);
+        }
+    }
         else if (Vector3.Distance(player.position, this.transform.position) < 2.2f)
         {
             direction.y = 0;
@@ -86,6 +86,9 @@ public class SkelController : MonoBehaviour {
             skelAnim.SetBool("Attacking", false);
             skelAnim.SetBool("Idle", true);
         }
+
+        //this.transform.Translate(0, 0, 0.009f);
+       // skelAnim.SetBool("Walking", true);
     }
 
     void TakeDamage(float damageTaken)

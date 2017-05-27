@@ -13,12 +13,15 @@ public class NPCFollowPlayer : MonoBehaviour {
 	public Transform target;			
 	public float moveSpeed = 8.0f;
 	public float turnSpeed = 2.0f;
-	public float rayDistance = 5.0f;
-	public enum NPC {Idle, FreeRoam, Chasing, RunningAway};
+	public float rayDistance = 2.0f;
+    public float angularRayDistance = 1.0f;
+	public enum NPC {Idle, FreeRoam, Chasing, RunningAway, Waypointing};
 	public NPC myState;
-	public 	float minimumRange = 4.0f;
-	public	float maximumRange = 45.0f;
+	public 	float minRange = 4.0f;
+	public	float maxRange = 45.0f;
 	public bool isNpcChasing = true;
+    public float heightChange = 0.75f;
+    public float centerRayDist = 1.0f;
 
 	private float minimumRangeSqr;
 	private float maximumRangeSqr;
@@ -42,8 +45,8 @@ public class NPCFollowPlayer : MonoBehaviour {
 
 
 	void Start () {
-		minimumRangeSqr = minimumRange * minimumRange;
-		maximumRangeSqr = maximumRange * maximumRange;
+		minimumRangeSqr = minRange * minRange;
+		maximumRangeSqr = maxRange * maxRange;
 
 		myTransform = transform;
 		myRigidbody = GetComponent<Rigidbody>();
@@ -90,8 +93,10 @@ public class NPCFollowPlayer : MonoBehaviour {
 			break;
 		}
 
-		//Moving ();
-	}
+
+
+        //Moving ();
+    }
 
 
 
@@ -104,28 +109,76 @@ public class NPCFollowPlayer : MonoBehaviour {
 
 		RaycastHit hit;
 
-		float shoulderMultiplyer = 0.4f;
+		float shoulderMultiplyer = 0.2f;
 		Vector3 leftRayPos = myTransform.position - (myTransform.right * shoulderMultiplyer);
 		Vector3 rightRayPos = myTransform.position + (myTransform.right * shoulderMultiplyer);
-
-		if(Physics.Raycast(leftRayPos, myTransform.forward,out hit, rayDistance))
-		{ if (hit.collider.gameObject.name != "Player")
+        Vector3 heightAdj = new Vector3(0, heightChange, 0);
+        
+        //Left ray
+        if (Physics.Raycast(leftRayPos + heightAdj, myTransform.forward,out hit, rayDistance))
+		{ if (hit.collider.gameObject.tag != "Player" )
 			{
-				Debug.DrawLine(leftRayPos, hit.point, Color.red);
-				lookDirection += hit.normal * 20.0f;
+                if (hit.collider.gameObject.tag != "Room")
+                {
+                    Debug.DrawLine(leftRayPos, hit.point, Color.red);
+                    lookDirection += hit.normal * 20.0f;
+                }
 			}
 		}
-		else if (Physics.Raycast(rightRayPos, myTransform.forward,out hit, rayDistance))
+        //right Ray
+		else if (Physics.Raycast(rightRayPos + heightAdj, myTransform.forward,out hit, rayDistance))
 		{ if (hit.collider.gameObject.name != "Player")
 			{
-				Debug.DrawRay(rightRayPos, myTransform.forward * rayDistance, Color.red);
-				lookDirection += hit.normal * 20.0f;
+                if (hit.collider.gameObject.tag != "Room")
+                {
+                    Debug.DrawRay(rightRayPos, myTransform.forward * rayDistance, Color.red);
+                    lookDirection += hit.normal * 20.0f;
+                }
 			}
 		}
-		else 
+        //center ray
+        else if (Physics.Raycast(myTransform.position + heightAdj, (myTransform.forward * rayDistance) * centerRayDist, out hit, rayDistance))
+        {
+            if (hit.collider.gameObject.name != "Player")
+            {
+                if (hit.collider.gameObject.tag != "Room")
+                {
+                    Debug.DrawRay(rightRayPos, myTransform.forward * rayDistance, Color.red);
+                    lookDirection += hit.normal * 55.0f;
+                }
+            }
+        }
+        //right 45
+        else if (Physics.Raycast(rightRayPos + heightAdj, (myTransform.forward + myTransform.right) * angularRayDistance, out hit, angularRayDistance))
+        {
+            if (hit.collider.gameObject.name != "Player")
+            {
+                if (hit.collider.gameObject.tag != "Room")
+                {
+                    Debug.DrawRay(rightRayPos, (myTransform.forward + myTransform.right) * angularRayDistance, Color.red);
+                    lookDirection += hit.normal * 10.0f;
+                }
+            }
+        }
+        //left 45
+        else if (Physics.Raycast(leftRayPos + heightAdj, (myTransform.forward - myTransform.right) * angularRayDistance, out hit, angularRayDistance))
+        {
+            if (hit.collider.gameObject.name != "Player")
+            {
+                if (hit.collider.gameObject.tag != "Room")
+                {
+                    Debug.DrawRay(leftRayPos, (myTransform.forward - myTransform.right) * angularRayDistance, Color.red);
+                    lookDirection += hit.normal * 10.0f;
+                }
+            }
+        }
+        else 
 		{
-			Debug.DrawRay(leftRayPos, myTransform.forward * rayDistance, Color.yellow);
-			Debug.DrawRay(rightRayPos, myTransform.forward * rayDistance, Color.yellow);
+            Debug.DrawRay(rightRayPos + heightAdj, (myTransform.forward + myTransform.right) * angularRayDistance, Color.green);
+            Debug.DrawRay(leftRayPos + heightAdj, (myTransform.forward - myTransform.right) * angularRayDistance, Color.green);
+            Debug.DrawRay(myTransform.position + heightAdj, (myTransform.forward * rayDistance) * centerRayDist, Color.green);
+            Debug.DrawRay(leftRayPos + heightAdj, myTransform.forward * rayDistance, Color.green);
+			Debug.DrawRay(rightRayPos + heightAdj, myTransform.forward * rayDistance, Color.green);
 		}
 
 
@@ -140,11 +193,9 @@ public class NPCFollowPlayer : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		//myRigidbody.AddForce(myTransform.forward * moveSpeed);
-
-		if (isGrounded) {
+		//if (isGrounded) {
 			myRigidbody.velocity = desiredVelocity;
-		}
+		//}
 	}
 
 	void OnCollisionEnter(Collision collision) {

@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\PowerUpActivate.cs" />
     <Compile Include="Assets\Scripts\PowerUpPickup.cs" />
     <Compile Include="Assets\Scripts\SkelController.cs" />
+    <Compile Include="Assets\Scripts\SkelControllerCopy.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
   </ItemGroup>
   <ItemGroup>
