@@ -14,10 +14,13 @@ public class CharacterBehaviour : MonoBehaviour
     bool jumping = false;
     bool swinging = false;
     bool damageSend = true;
+    bool isBlocking = false;
     bool combo1Available = false;
     bool combo1InUse = false;
+    bool combo1AnimInProg = false;
     bool combo2Available = false;
     bool combo2InUse = false;
+    bool combo2AnimInProg = false;
 
     List<Collider> enemColliders;
 
@@ -104,11 +107,14 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (swinging == false)
             {
+                combo2Available = true;
                 if (combo1Available == true)
                 {
                     charAnim.SetTrigger("Swing2");
                     swinging = true;
                     combo1InUse = true;
+                    combo1AnimInProg = true;
+                    StartCoroutine(SecondSwingProgress());
                     StartCoroutine(ComboTime());
                 }
                 else if (combo2Available == true)
@@ -116,6 +122,8 @@ public class CharacterBehaviour : MonoBehaviour
                     charAnim.SetTrigger("Swing3");
                     swinging = true;
                     combo2InUse = true;
+                    combo2AnimInProg = true;
+                    StartCoroutine(ThirdSwingProgress());
                     StartCoroutine(ComboTime());
                 }
                 else
@@ -149,8 +157,10 @@ public class CharacterBehaviour : MonoBehaviour
 
     IEnumerator ComboTime()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.8f);
         swinging = false;
+        //Debug.Log("not swinging");
+        //Debug.Break();
         damageSend = true;
         if (combo1InUse == false && combo2InUse == false)
         {
@@ -168,6 +178,8 @@ public class CharacterBehaviour : MonoBehaviour
     IEnumerator ComboBoolReset()
     {
         yield return new WaitForSeconds(0.5f);
+       // Debug.Log("Combo Missed");
+        //Debug.Break();
         if (combo1Available == true)
         {
             combo1Available = false;
@@ -177,9 +189,19 @@ public class CharacterBehaviour : MonoBehaviour
         {
             combo2Available = false;
         }
+    }
 
+    IEnumerator SecondSwingProgress()
+    {
+        yield return new WaitForSeconds(1.1f);
+        combo1AnimInProg = false;
+    }
 
-
+    IEnumerator ThirdSwingProgress()
+    {
+        yield return new WaitForSeconds(1.5f);
+        //Debug.Break();
+        combo2AnimInProg = false;
     }
 
     void Blocking()
@@ -187,10 +209,12 @@ public class CharacterBehaviour : MonoBehaviour
         if (Input.GetButtonDown("Block"))
         {
             charAnim.SetBool("Blocking", true);
+            isBlocking = true;
         }
         if (Input.GetButtonUp("Block"))
         {
             charAnim.SetBool("Blocking", false);
+            isBlocking = false;
         }
     }
 
@@ -198,17 +222,30 @@ public class CharacterBehaviour : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            enemColliders.Add(other);
+            Debug.Log("Enemy123");
+            //enemColliders.Add(other);
+            if (swinging == true || combo1AnimInProg == true || combo2AnimInProg == true)
+            {
+                if(combo2AnimInProg == true)
+                {
+                    other.gameObject.SendMessage("TakeDamage", playerDamage*2);
+                }
+                else
+                {
+                    other.gameObject.SendMessage("TakeDamage", playerDamage);
+                }
+                
+            }
         }
     }
 
-    void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.tag == "Enemy")
-        {
-            enemColliders.Remove(other);
-        }
-    }
+    //void OnTriggerExit(Collider other)
+    //{
+    //    if (other.gameObject.tag == "Enemy")
+    //    {
+    //        enemColliders.Remove(other);
+    //    }
+    //}
 
     void SendDamage()
     {
@@ -221,16 +258,18 @@ public class CharacterBehaviour : MonoBehaviour
 
     void TakeDamage(float damage)
     {
-
-        if (playerShield == true && shieldCount > 0)
+        if(isBlocking != true)
         {
-            shieldCount -= 1;
-            DamageRecieved();
-        }
-        else
-        {
-            playerHealth -= damage;
-            DamageRecieved();
+            if (playerShield == true && shieldCount > 0)
+            {
+                shieldCount -= 1;
+                DamageRecieved();
+            }
+            else
+            {
+                playerHealth -= damage;
+                DamageRecieved();
+            }
         }
     }
 

@@ -69,21 +69,6 @@ public class NPCFollowPlayer : MonoBehaviour {
 			desiredVelocity = new Vector3(0, myRigidbody.velocity.y, 0);
 			break;
 
-		case NPC.FreeRoam :
-			freeRoamTimer += Time.deltaTime;
-
-			if(freeRoamTimer > freeRoamTimerMaxAdjusted )
-			{
-				freeRoamTimer = 0.0f;
-				freeRoamTimerMaxAdjusted = freeRoamTimerMax + Random.Range( -freeRoamTimerMaxRange, freeRoamTimerMaxRange);
-
-				calcDir = Random.onUnitSphere;  //Ask for a random vector 3
-				calcDir.y = 0.0f; //myTransform.forward.y;
-			}
-
-			Moving (calcDir);
-			break;
-
 		case NPC.Chasing :
 			Moving ((target.position - myTransform.position).normalized);
 			break;
@@ -193,27 +178,9 @@ public class NPCFollowPlayer : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		//if (isGrounded) {
 			myRigidbody.velocity = desiredVelocity;
-		//}
 	}
 
-	void OnCollisionEnter(Collision collision) {
-		if (collision.collider.gameObject.name == "Floor") {
-			isGrounded = true;
-		}
-	}
-	void OnCollisionStay(Collision collision) {
-		if (collision.collider.gameObject.name == "Floor") {
-			isGrounded = true;
-		}
-	}
-
-	void OnCollisionExit(Collision collision) {
-		if (collision.collider.gameObject.name == "Floor") {
-			isGrounded = false;
-		}
-	}
 
 
 

@@ -45,20 +45,20 @@ public class SkelController : MonoBehaviour {
 
             this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
 
-        skelAnim.SetBool("Idle", false);
+            skelAnim.SetBool("Idle", false);
 
-        if (direction.magnitude > 1.5f)
-        {
-            this.transform.Translate(0, 0, 0.007f);
-            skelAnim.SetBool("Walking", true);
-            skelAnim.SetBool("Attacking", false);
+            if (direction.magnitude > 1.5f)
+            {
+                this.transform.Translate(0, 0, 0.007f);
+                skelAnim.SetBool("Walking", true);
+                skelAnim.SetBool("Attacking", false);
+            }
+            else
+            {
+                skelAnim.SetBool("Walking", false);
+                skelAnim.SetBool("Attacking", true);
+            }
         }
-        else
-        {
-            skelAnim.SetBool("Walking", false);
-            skelAnim.SetBool("Attacking", true);
-        }
-    }
         else if (Vector3.Distance(player.position, this.transform.position) < 2.2f)
         {
             direction.y = 0;
