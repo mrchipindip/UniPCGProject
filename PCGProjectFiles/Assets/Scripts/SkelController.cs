@@ -8,16 +8,20 @@ public class SkelController : MonoBehaviour {
     Animator skelAnim;
     public float health = 60.0f;
     public float damage = 10.0f;
+    NPCFollowPlayer chaseNav;
 
     private bool atkInProg = false;
     private int atkCounter = 0;
+    private bool inChase = false;
 
     bool dead = false;
 
+    
 	// Use this for initialization
 	void Start () {
         skelAnim = GetComponent<Animator>();
-	}
+        chaseNav = gameObject.GetComponent<NPCFollowPlayer>();
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -35,26 +39,30 @@ public class SkelController : MonoBehaviour {
 
     void CalcState()
     {
-
+       
         Vector3 direction = player.position - this.transform.position;
         float viewAngle = Vector3.Angle(direction, this.transform.forward);
-        if (Vector3.Distance(player.position, this.transform.position) < 5 && viewAngle < 30)
+        if ((Vector3.Distance(player.position, this.transform.position) < 5 && viewAngle < 30) || (Vector3.Distance(player.position, this.transform.position) < 5 && inChase == true))
         {
 
             direction.y = 0;
 
-            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
+            //this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.1f);
 
             skelAnim.SetBool("Idle", false);
 
             if (direction.magnitude > 1.5f)
             {
-                this.transform.Translate(0, 0, 0.007f);
+                //this.transform.Translate(0, 0, 0.007f);
+                chaseNav.myState = NPCFollowPlayer.NPC.Chasing;
+                inChase = true;
                 skelAnim.SetBool("Walking", true);
                 skelAnim.SetBool("Attacking", false);
             }
             else
             {
+                chaseNav.myState = NPCFollowPlayer.NPC.Idle;
+                inChase = false;
                 skelAnim.SetBool("Walking", false);
                 skelAnim.SetBool("Attacking", true);
             }
@@ -68,12 +76,16 @@ public class SkelController : MonoBehaviour {
             skelAnim.SetBool("Idle", false);
             if (direction.magnitude > 1.5f)
             {
-                this.transform.Translate(0, 0, 0.007f);
+                //this.transform.Translate(0, 0, 0.007f);
+                chaseNav.myState = NPCFollowPlayer.NPC.Chasing;
+                inChase = true;
                 skelAnim.SetBool("Walking", true);
                 skelAnim.SetBool("Attacking", false);
             }
             else
             {
+                chaseNav.myState = NPCFollowPlayer.NPC.Idle;
+                inChase = false;
                 skelAnim.SetBool("Walking", false);
                 skelAnim.SetBool("Attacking", true);
                 atkInProg = true;
@@ -85,6 +97,8 @@ public class SkelController : MonoBehaviour {
             skelAnim.SetBool("Walking", false);
             skelAnim.SetBool("Attacking", false);
             skelAnim.SetBool("Idle", true);
+            chaseNav.myState = NPCFollowPlayer.NPC.Idle;
+            inChase = false;
         }
 
         //this.transform.Translate(0, 0, 0.009f);

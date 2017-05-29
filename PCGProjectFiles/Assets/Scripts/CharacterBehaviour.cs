@@ -107,7 +107,7 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (swinging == false)
             {
-                combo2Available = true;
+
                 if (combo1Available == true)
                 {
                     charAnim.SetTrigger("Swing2");

@@ -1,82 +1,85 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent (typeof (Rigidbody))]
+[RequireComponent(typeof(Rigidbody))]
 
 
-public class NPCFollowPlayer : MonoBehaviour {
+public class NPCFollowPlayer : MonoBehaviour
+{
 
 
 
 
 
-	public Transform target;			
-	public float moveSpeed = 8.0f;
-	public float turnSpeed = 2.0f;
-	public float rayDistance = 2.0f;
+    public Transform target;
+    public float moveSpeed = 8.0f;
+    public float turnSpeed = 2.0f;
+    public float rayDistance = 2.0f;
     public float angularRayDistance = 1.0f;
-	public enum NPC {Idle, FreeRoam, Chasing, RunningAway, Waypointing};
-	public NPC myState;
-	public 	float minRange = 4.0f;
-	public	float maxRange = 45.0f;
-	public bool isNpcChasing = true;
+    public enum NPC { Idle, FreeRoam, Chasing, RunningAway, Waypointing };
+    public NPC myState;
+    public float minRange = 4.0f;
+    public float maxRange = 45.0f;
+    public bool isNpcChasing = true;
     public float heightChange = 0.75f;
     public float centerRayDist = 1.0f;
 
-	private float minimumRangeSqr;
-	private float maximumRangeSqr;
+    private float minimumRangeSqr;
+    private float maximumRangeSqr;
 
-	private Transform myTransform;		
-	private Rigidbody myRigidbody;
-	private Vector3 desiredVelocity;
-	private bool isGrounded = false;
+    private Transform myTransform;
+    private Rigidbody myRigidbody;
+    private Vector3 desiredVelocity;
+    private bool isGrounded = false;
 
-	private float freeRoamTimer = 0.0f;
-	private float freeRoamTimerMax = 5.0f;
-	private float freeRoamTimerMaxRange = 1.5f;
-	private float freeRoamTimerMaxAdjusted = 5.0f;
+    private float freeRoamTimer = 0.0f;
+    private float freeRoamTimerMax = 5.0f;
+    private float freeRoamTimerMaxRange = 1.5f;
+    private float freeRoamTimerMaxAdjusted = 5.0f;
 
-	Vector3 calcDir;
-
-
+    Vector3 calcDir;
 
 
 
 
 
-	void Start () {
-		minimumRangeSqr = minRange * minRange;
-		maximumRangeSqr = maxRange * maxRange;
-
-		myTransform = transform;
-		myRigidbody = GetComponent<Rigidbody>();
-		myRigidbody.freezeRotation = true;
-
-		calcDir = Random.onUnitSphere;
-		calcDir.y = 0.0f; //myTransform.forward.y;   no required as myTransform.forward.y is also 0 on the y axis
-	}
 
 
+    void Start()
+    {
+        minimumRangeSqr = minRange * minRange;
+        maximumRangeSqr = maxRange * maxRange;
+
+        myTransform = transform;
+        myRigidbody = GetComponent<Rigidbody>();
+        myRigidbody.freezeRotation = true;
+
+        calcDir = Random.onUnitSphere;
+        calcDir.y = 0.0f; //myTransform.forward.y;   no required as myTransform.forward.y is also 0 on the y axis
+    }
 
 
-	void Update() {
 
 
-		switch (myState) 
-		{
+    void Update()
+    {
 
-		case NPC.Idle :
-			desiredVelocity = new Vector3(0, myRigidbody.velocity.y, 0);
-			break;
 
-		case NPC.Chasing :
-			Moving ((target.position - myTransform.position).normalized);
-			break;
+        switch (myState)
+        {
 
-		case NPC.RunningAway :
-			Moving ((myTransform.position - target.position).normalized);
-			break;
-		}
+            case NPC.Idle:
+                 desiredVelocity = new Vector3(0, myRigidbody.velocity.y, 0);
+                break;
+
+            case NPC.Chasing:
+                Moving((target.position - myTransform.position).normalized);
+                break;
+
+            case NPC.RunningAway:
+                Moving((myTransform.position - target.position).normalized);
+                break;
+        }
 
 
 
@@ -87,40 +90,43 @@ public class NPCFollowPlayer : MonoBehaviour {
 
 
 
-	void Moving (Vector3 lookDirection) {
+    void Moving(Vector3 lookDirection)
+    {
 
-		//Rotation
-		//Vector3 lookDirection = (target.position - myTransform.position).normalized;
+        //Rotation
+        //Vector3 lookDirection = (target.position - myTransform.position).normalized;
 
-		RaycastHit hit;
+        RaycastHit hit;
 
-		float shoulderMultiplyer = 0.2f;
-		Vector3 leftRayPos = myTransform.position - (myTransform.right * shoulderMultiplyer);
-		Vector3 rightRayPos = myTransform.position + (myTransform.right * shoulderMultiplyer);
+        float shoulderMultiplyer = 0.2f;
+        Vector3 leftRayPos = myTransform.position - (myTransform.right * shoulderMultiplyer);
+        Vector3 rightRayPos = myTransform.position + (myTransform.right * shoulderMultiplyer);
         Vector3 heightAdj = new Vector3(0, heightChange, 0);
-        
+
         //Left ray
-        if (Physics.Raycast(leftRayPos + heightAdj, myTransform.forward,out hit, rayDistance))
-		{ if (hit.collider.gameObject.tag != "Player" )
-			{
+        if (Physics.Raycast(leftRayPos + heightAdj, myTransform.forward, out hit, rayDistance))
+        {
+            if (hit.collider.gameObject.tag != "Player")
+            {
                 if (hit.collider.gameObject.tag != "Room")
                 {
                     Debug.DrawLine(leftRayPos, hit.point, Color.red);
                     lookDirection += hit.normal * 20.0f;
                 }
-			}
-		}
+            }
+        }
         //right Ray
-		else if (Physics.Raycast(rightRayPos + heightAdj, myTransform.forward,out hit, rayDistance))
-		{ if (hit.collider.gameObject.name != "Player")
-			{
+        else if (Physics.Raycast(rightRayPos + heightAdj, myTransform.forward, out hit, rayDistance))
+        {
+            if (hit.collider.gameObject.name != "Player")
+            {
                 if (hit.collider.gameObject.tag != "Room")
                 {
                     Debug.DrawRay(rightRayPos, myTransform.forward * rayDistance, Color.red);
                     lookDirection += hit.normal * 20.0f;
                 }
-			}
-		}
+            }
+        }
         //center ray
         else if (Physics.Raycast(myTransform.position + heightAdj, (myTransform.forward * rayDistance) * centerRayDist, out hit, rayDistance))
         {
@@ -157,74 +163,75 @@ public class NPCFollowPlayer : MonoBehaviour {
                 }
             }
         }
-        else 
-		{
+        else
+        {
             Debug.DrawRay(rightRayPos + heightAdj, (myTransform.forward + myTransform.right) * angularRayDistance, Color.green);
             Debug.DrawRay(leftRayPos + heightAdj, (myTransform.forward - myTransform.right) * angularRayDistance, Color.green);
             Debug.DrawRay(myTransform.position + heightAdj, (myTransform.forward * rayDistance) * centerRayDist, Color.green);
             Debug.DrawRay(leftRayPos + heightAdj, myTransform.forward * rayDistance, Color.green);
-			Debug.DrawRay(rightRayPos + heightAdj, myTransform.forward * rayDistance, Color.green);
-		}
+            Debug.DrawRay(rightRayPos + heightAdj, myTransform.forward * rayDistance, Color.green);
+        }
 
 
-		Quaternion lookRot = Quaternion.LookRotation (lookDirection);
+        Quaternion lookRot = Quaternion.LookRotation(lookDirection);
 
-		myTransform.rotation = Quaternion.Slerp(myTransform.rotation, lookRot, turnSpeed * Time.deltaTime);
+        myTransform.rotation = Quaternion.Slerp(myTransform.rotation, lookRot, turnSpeed * Time.deltaTime);
 
-		//Movement
-		//myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
-		desiredVelocity = myTransform.forward * moveSpeed;
-		desiredVelocity.y = myRigidbody.velocity.y;
-	}
+        //Movement
+        //myTransform.position += myTransform.forward * moveSpeed * Time.deltaTime;
+        desiredVelocity = myTransform.forward * moveSpeed;
+        desiredVelocity.y = myRigidbody.velocity.y;
+    }
 
-	void FixedUpdate() {
-			myRigidbody.velocity = desiredVelocity;
-	}
-
-
-
+    void FixedUpdate()
+    {
+        myRigidbody.velocity = desiredVelocity;
+    }
 
 
-	void MakeDecisions() {
-		float sqrDist = (target.position - myTransform.position).sqrMagnitude;
-
-		if (sqrDist > maximumRangeSqr) {
-			if (isNpcChasing) 
-			{
-				myState = NPC.Chasing;
-			} 
-			else 
-			{
-				myState = NPC.FreeRoam;
-			}
-		} 
-		else if (sqrDist < minimumRangeSqr) 
-		{
-			if ( isNpcChasing )
-			{
-				myState = NPC.Idle;
-			}
-
-			else 
-			{
-				myState = NPC.RunningAway;
-			}
-		}
-
-		else
-		{
-			if ( isNpcChasing )
-			{
-				myState = NPC.Chasing;
-			}
-
-			else 
-			{
-				myState = NPC.RunningAway;
-			}
-		}
-
-	}
 
 
+
+    void MakeDecisions()
+    {
+        float sqrDist = (target.position - myTransform.position).sqrMagnitude;
+
+        if (sqrDist > maximumRangeSqr)
+        {
+            if (isNpcChasing)
+            {
+                myState = NPC.Chasing;
+            }
+            else
+            {
+                myState = NPC.FreeRoam;
+            }
+        }
+        else if (sqrDist < minimumRangeSqr)
+        {
+            if (isNpcChasing)
+            {
+                myState = NPC.Idle;
+            }
+
+            else
+            {
+                myState = NPC.RunningAway;
+            }
+        }
+
+        else
+        {
+            if (isNpcChasing)
+            {
+                myState = NPC.Chasing;
+            }
+
+            else
+            {
+                myState = NPC.RunningAway;
+            }
+        }
+
+    }
 }
