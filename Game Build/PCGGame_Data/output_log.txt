@@ -7,1253 +7,1777 @@ Direct3D:
     VRAM:     3072 MB (via DXGI)
     Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 NULL=1 RESZ=0 SlowINTZ=0 ATOC=1 BC4=1 BC5=1
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
-Loading E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-Platform assembly: E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
-Loading E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.024 seconds
-Platform assembly: E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: E:\Chippy Final Year\Project\TestBuilds\3\PCGGame_Data\Managed\System.dll (this message is harmless)
+Platform assembly: E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+- Completed reload, in  0.034 seconds
+Platform assembly: E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.195776 ms
+UnloadTime: 3.619578 ms
 Setting up 2 worker threads for Enlighten.
-  Thread -> id: 7630 -> priority: 1 
-  Thread -> id: a518 -> priority: 1 
+  Thread -> id: 89e4 -> priority: 1 
+  Thread -> id: 8a18 -> priority: 1 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.677186 ms
+UnloadTime: 4.122617 ms
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 15004.
-Total: 2.611970 ms (FindLiveObjects: 0.578048 ms CreateObjectMapping: 0.092928 ms MarkObjects: 1.641473 ms  DeleteObjects: 0.298752 ms)
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 15747.
+Total: 3.196411 ms (FindLiveObjects: 0.615423 ms CreateObjectMapping: 0.226303 ms MarkObjects: 2.004988 ms  DeleteObjects: 0.348927 ms)
 
 IndexOutOfRangeException: Array index is out of range.
   at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
 (Filename:  Line: -1)
 
-num: 0
+OUtside following exit loop
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Coll Detected
+Exit inside
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Bingo
+Final room placement Failed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Coll Detected
+Exit inside
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Bingo
+Final room placement Passed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Coll Detected
+Exit inside
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Bingo
+Final room placement Done. Room closed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Coll Detected
+Exit inside
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Bingo
+Final room placement Done. Room closed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Coll Detected
+Exit inside
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Bingo
+Final room placement Done. Room closed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Coll Detected
+Exit inside
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Bingo
+Final room placement Done. Room closed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Coll Detected
+Exit inside
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Bingo
+Final room placement Done. Room closed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Coll Detected
+Exit inside
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Bingo
+Final room placement Done. Room closed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Coll Detected
+Exit inside
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Bingo
+Final room placement Done. Room closed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-num: 1
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-num: 2
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-num: 3
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-num: 4
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-num: 5
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Coll Detected
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Bingo
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-num: 6
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
 IndexOutOfRangeException: Array index is out of range.
   at ItemRandom.Start () [0x00000] in <filename unknown>:0 
@@ -1760,55 +2284,68 @@ IndexOutOfRangeException: Array index is out of range.
  
 (Filename:  Line: -1)
 
-Enemy123
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-DamageRecieved 20
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Enemy123
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-DamageRecieved 20
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Hit
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Enemy123
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-DamageRecieved 20
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Enemy123
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-DamageRecieved 20
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Enemy123
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-DamageRecieved 20
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Enemy123
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 
-Enemy123
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+(Filename:  Line: -1)
 

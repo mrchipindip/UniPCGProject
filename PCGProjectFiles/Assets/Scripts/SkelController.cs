@@ -120,16 +120,19 @@ public class SkelController : MonoBehaviour {
     }
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "Player")
+        if (!dead)
         {
-            if(atkInProg != true)
+            if (other.gameObject.tag == "Player")
             {
-                Debug.Log("Hit");
-                atkInProg = true;
-                other.gameObject.SendMessage("TakeDamage", damage);
-                StartCoroutine(WaitTime());
+                if (atkInProg != true)
+                {
+                    Debug.Log("Hit");
+                    atkInProg = true;
+                    other.gameObject.SendMessage("TakeDamage", damage);
+                    StartCoroutine(WaitTime());
+                }
+
             }
-            
         }
     }
 

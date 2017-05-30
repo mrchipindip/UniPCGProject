@@ -16,13 +16,16 @@ public class ModularWorldGenerator : MonoBehaviour
 
     void Start()
     {
-        //Instan a starting mdule
-        //var startModule = (Module)Instantiate(StartModule, transform.position, transform.rotation);
-        var startModule = StartingRoom;
-        var pendingExits = new List<ModuleConnector>(startModule.GetExits());
 
-        List<Module> allRooms = new List<Module>();
-        allRooms.Add(startModule);
+        while (endRoomPresent != true)
+        {
+            //Instan a starting mdule
+            //var startModule = (Module)Instantiate(StartModule, transform.position, transform.rotation);
+            var startModule = StartingRoom;
+            var pendingExits = new List<ModuleConnector>(startModule.GetExits());
+
+            List<Module> allRooms = new List<Module>();
+            allRooms.Add(startModule);
 
             for (int iteration = 0; iteration < Iterations; iteration++)
             {
@@ -52,7 +55,7 @@ public class ModularWorldGenerator : MonoBehaviour
                         if (CheckCollisions(newModule, allRooms) == true)
                         {
                             Destroy(newModule.gameObject);
-                            Debug.Log("Bingo");
+                            //Debug.Log("Bingo");
                         }
                         else if (CheckCollisions(newModule, allRooms) == false)
                         {
@@ -64,6 +67,7 @@ public class ModularWorldGenerator : MonoBehaviour
                         if (infPreventer > 35)
                         {
                             colPresent = false;
+                            newExits.Add(pendingExit);
                         }
                         infPreventer++;
 
@@ -73,14 +77,15 @@ public class ModularWorldGenerator : MonoBehaviour
 
                 }
                 //add all unconnected exits to the pending exits list
-                Debug.Log("num: " + iteration);
+                //Debug.Log("num: " + iteration);
                 pendingExits = newExits;
             }
 
             //Close exits and place final room
+            Debug.Log("OUtside following exit loop");
             foreach (var pendingExit in pendingExits)
             {
-
+                Debug.Log("Exit inside");
                 if (endRoomPresent == false)
                 {
                     //place final room and match the exit
@@ -91,17 +96,19 @@ public class ModularWorldGenerator : MonoBehaviour
                     //If placed end room collides with another - Destroy - close exit
                     if (CheckCollisions(newModule, allRooms) == true)
                     {
+                        Debug.Log("Final room placement Failed");
                         //destroy end room
                         Destroy(newModule.gameObject);
                         //close exit
-                        var newCloseModule = (Module)Instantiate(endRoom);
+                        var newCloseModule = (Module)Instantiate(exitCloser); //changed "endRoom" to "exitCloser"
                         var newCloseModuleExits = newCloseModule.GetExits();
-                        var exitToMatchClose = newCloseModuleExits.FirstOrDefault(x => x.IsDefault) ?? GetRandom(newModuleExits);
+                        var exitToMatchClose = newCloseModuleExits.FirstOrDefault(x => x.IsDefault) ?? GetRandom(newCloseModuleExits);
                         MatchExits(pendingExit, exitToMatchClose);
                     }
                     else if (CheckCollisions(newModule, allRooms) == false)
                     {
                         endRoomPresent = true;
+                        Debug.Log("Final room placement Passed");
                     }
 
 
@@ -109,6 +116,7 @@ public class ModularWorldGenerator : MonoBehaviour
                 //Final Room already present - close all remaining exits
                 else
                 {
+                    Debug.Log("Final room placement Done. Room closed");
                     //instantiate the closing module
                     var newModule = (Module)Instantiate(exitCloser);
                     //Get room closers exits
@@ -120,6 +128,7 @@ public class ModularWorldGenerator : MonoBehaviour
                 }
 
             }
+        }
 
     }
 
@@ -168,7 +177,7 @@ public class ModularWorldGenerator : MonoBehaviour
             
             if(newCollider.bounds.Intersects(compareCollider.bounds))
             {
-                Debug.Log("Coll Detected");
+                //Debug.Log("Coll Detected");
                 return true;
             }
         }
