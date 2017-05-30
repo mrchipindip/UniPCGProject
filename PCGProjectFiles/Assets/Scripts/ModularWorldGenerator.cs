@@ -128,6 +128,35 @@ public class ModularWorldGenerator : MonoBehaviour
                 }
 
             }
+            
+            if(endRoomPresent != true)
+            {
+                Debug.Log("No end room... Destroying");
+                allRooms.Remove(startModule);
+
+                foreach(Module room in allRooms)
+                {
+                    Destroy(room.gameObject);
+                    Destroy(room);
+                }
+
+                bool closersPresent = true;
+
+                while(closersPresent == true)
+                {
+                    GameObject roomCloser = (GameObject)GameObject.Find("RoomCloser(Clone)");
+                    if (roomCloser)
+                    {
+                        GameObject.Destroy(roomCloser);
+                    }
+                    else
+                    {
+                        closersPresent = false;
+                        Debug.Break();
+                    }
+                }
+            }
+
         }
 
     }
