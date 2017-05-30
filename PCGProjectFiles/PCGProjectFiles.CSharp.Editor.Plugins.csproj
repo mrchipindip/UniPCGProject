@@ -127,12 +127,22 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\Bloom\Editor\BloomEditor.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\Bloom\Editor\BloomGraphDrawer.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\Common\Editor\EditorGUIHelper.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\Common\Editor\FieldFinder.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\Common\Editor\MinDrawer.cs" />
+    <Compile Include="Assets\Standard Assets\Effects\LensAberrations\Editor\LensAberrationsEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Dungeon_Kit\Models\Doors_Gates\Animation_Info\steel_door_animation_list.txt" />
     <None Include="Assets\Dungeon_Kit\Models\Doors_Gates\Animation_Info\wood_door_animation_list.txt" />
+    <None Include="Assets\EffectExamples\Shared\Shaders\SurfaceShader_VC.shader" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.cginc" />
+    <None Include="Assets\Standard Assets\Effects\Bloom\Resources\Bloom.shader" />
+    <None Include="Assets\Standard Assets\Effects\LensAberrations\Resources\LensAberrations.shader" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

@@ -24,6 +24,13 @@ public class CharacterBehaviour : MonoBehaviour
 
     List<Collider> enemColliders;
 
+    //AudioSources
+    AudioSource blockedAttack;
+    AudioSource swingSound;
+    AudioSource swingSound2;
+    AudioSource swingSound3;
+    AudioSource damageFlinchSound;
+
     public float playerHealth = 100.0f;
     public bool playerShield = false;
     public int shieldCount = 0;
@@ -33,6 +40,14 @@ public class CharacterBehaviour : MonoBehaviour
     {
         charAnim = GetComponent<Animator>();
         enemColliders = new List<Collider>();
+
+        //Sounds
+        AudioSource[] audios = GetComponents<AudioSource>();
+        blockedAttack = audios[0];
+        swingSound = audios[1];
+        swingSound2 = audios[2];
+        swingSound3 = audios[3];
+        damageFlinchSound = audios[4];
     }
 
     void Update()
@@ -94,6 +109,7 @@ public class CharacterBehaviour : MonoBehaviour
     void DamageRecieved()
     {
         charAnim.SetTrigger("DamageTaken");
+        damageFlinchSound.Play();
     }
 
     void PowerUpCollected()
@@ -107,9 +123,10 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (swinging == false)
             {
-
+                
                 if (combo1Available == true)
                 {
+                    swingSound2.PlayDelayed(0.9f);
                     charAnim.SetTrigger("Swing2");
                     swinging = true;
                     combo1InUse = true;
@@ -119,6 +136,7 @@ public class CharacterBehaviour : MonoBehaviour
                 }
                 else if (combo2Available == true)
                 {
+                    swingSound3.PlayDelayed(1.05f);
                     charAnim.SetTrigger("Swing3");
                     swinging = true;
                     combo2InUse = true;
@@ -128,6 +146,7 @@ public class CharacterBehaviour : MonoBehaviour
                 }
                 else
                 {
+                    swingSound.PlayDelayed(0.5f);
                     charAnim.SetTrigger("Swing");
                     swinging = true;
                     StartCoroutine(ComboTime());
@@ -270,6 +289,10 @@ public class CharacterBehaviour : MonoBehaviour
                 playerHealth -= damage;
                 DamageRecieved();
             }
+        }
+        else
+        {
+            blockedAttack.Play();
         }
     }
 

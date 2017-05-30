@@ -115,6 +115,8 @@ public class SkelController : MonoBehaviour {
             dead = true;
         }
 
+        skelAnim.SetTrigger("Damaged");
+
     }
     void OnTriggerEnter(Collider other)
     {
