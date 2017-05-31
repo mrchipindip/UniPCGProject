@@ -21,22 +21,163 @@ Platform assembly: E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGam
 Loading E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
 Loading E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
-- Completed reload, in  0.034 seconds
+- Completed reload, in  0.027 seconds
 Platform assembly: E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: E:\Chippy Final Year\Project\Bitbucket\Repo\Game Build\PCGGame_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 3.619578 ms
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 89e4 -> priority: 1 
-  Thread -> id: 8a18 -> priority: 1 
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.122617 ms
+UnloadTime: 1.099519 ms
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 15747.
-Total: 3.196411 ms (FindLiveObjects: 0.615423 ms CreateObjectMapping: 0.226303 ms MarkObjects: 2.004988 ms  DeleteObjects: 0.348927 ms)
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+IndexOutOfRangeException: Array index is out of range.
+  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 544c -> priority: 1 
+  Thread -> id: 5ef0 -> priority: 1 
+WARNING: Shader Unsupported: 'Hidden/Post FX/Depth Of Field' - Pass 'COC TEMPORAL FILTER' has no vertex shader
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 6.771966 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 16263.
+Total: 4.425726 ms (FindLiveObjects: 0.494079 ms CreateObjectMapping: 0.201983 ms MarkObjects: 2.236415 ms  DeleteObjects: 1.492991 ms)
 
 IndexOutOfRangeException: Array index is out of range.
   at ItemRandom.Start () [0x00000] in <filename unknown>:0 
@@ -44,6 +185,14 @@ IndexOutOfRangeException: Array index is out of range.
 (Filename:  Line: -1)
 
 OUtside following exit loop
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Exit inside
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Final room placement Failed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
@@ -87,208 +236,6 @@ Final room placement Done. Room closed
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Exit inside
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Final room placement Done. Room closed
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exit inside
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Final room placement Done. Room closed
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exit inside
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Final room placement Done. Room closed
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Exit inside
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Final room placement Done. Room closed
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
 IndexOutOfRangeException: Array index is out of range.
   at ItemRandom.Start () [0x00000] in <filename unknown>:0 
  
@@ -2144,70 +2091,11 @@ IndexOutOfRangeException: Array index is out of range.
  
 (Filename:  Line: -1)
 
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
-
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 40.770035 ms
 
-IndexOutOfRangeException: Array index is out of range.
-  at ItemRandom.Start () [0x00000] in <filename unknown>:0 
- 
-(Filename:  Line: -1)
+Unloading 141 unused Assets to reduce memory usage. Loaded Objects now: 3346.
+Total: 5.425662 ms (FindLiveObjects: 0.540671 ms CreateObjectMapping: 0.056063 ms MarkObjects: 0.664575 ms  DeleteObjects: 4.164350 ms)
 
 IndexOutOfRangeException: Array index is out of range.
   at ItemRandom.Start () [0x00000] in <filename unknown>:0 
