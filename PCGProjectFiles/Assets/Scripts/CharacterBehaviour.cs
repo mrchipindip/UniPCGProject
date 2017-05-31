@@ -30,11 +30,23 @@ public class CharacterBehaviour : MonoBehaviour
     AudioSource swingSound2;
     AudioSource swingSound3;
     AudioSource damageFlinchSound;
+    AudioSource runningSound;
+    AudioSource enemyHitSound;
 
     public float playerHealth = 100.0f;
+    private float maxHealth = 100.0f;
     public bool playerShield = false;
     public int shieldCount = 0;
     public float playerDamage = 20.0f;
+
+    public GameObject healthBar;
+    public GameObject shieldUI;
+    private float shieldTime = 20.0f;
+    public GameObject shieldRemainingUI;
+    public GameObject shieldTimeUI;
+    public GameObject damageUI;
+    private float damageTime = 15.0f;
+    public GameObject damageTimeUI;
 
     void Awake()
     {
@@ -48,22 +60,86 @@ public class CharacterBehaviour : MonoBehaviour
         swingSound2 = audios[2];
         swingSound3 = audios[3];
         damageFlinchSound = audios[4];
+        runningSound = audios[5];
+        enemyHitSound = audios[6];
     }
 
     void Update()
     {
         //Turn();
-        //Move();
+        Move();
         //Jump();
         Swing();
         ComboOne();
         ComboTwo();
         Blocking();
         IsDead();
+        UpdateHealthbar();
+        UpdateShields();
+        UpdateDamage();
         if (swinging == true && damageSend == true)
         {
             SendDamage();
         }
+    }
+
+    void UpdateShields()
+    {
+        if (playerShield == true)
+        {
+            shieldUI.SetActive(true);
+            float currShields = shieldCount / 3;
+            shieldRemainingUI.transform.localScale = new Vector3(Mathf.Clamp(currShields, 0f, 1f), shieldRemainingUI.transform.localScale.y, shieldRemainingUI.transform.localScale.z);
+
+            shieldTime = shieldTime - Time.deltaTime;
+            float currShieldTime = shieldTime / 20.0f;
+            if(currShieldTime <= 0)
+            {
+                playerShield = false;
+            }
+            shieldTimeUI.transform.localScale = new Vector3(Mathf.Clamp(currShieldTime, 0f, 1f), shieldTimeUI.transform.localScale.y, shieldTimeUI.transform.localScale.z);
+        }
+        else
+        {
+            if(shieldUI.activeInHierarchy == true)
+            {
+                shieldUI.SetActive(false);
+            }
+        }
+    }
+
+    void UpdateDamage()
+    {
+        if (playerDamage > 20.0f)
+        {
+            damageUI.SetActive(true);
+            damageTime = damageTime - Time.deltaTime;
+            float currDamageTime = damageTime / 15.0f;
+            damageTimeUI.transform.localScale = new Vector3(Mathf.Clamp(currDamageTime, 0f, 1f), damageTimeUI.transform.localScale.y, damageTimeUI.transform.localScale.z);
+        }
+        else
+        {
+            if(damageUI.activeInHierarchy)
+            {
+                damageUI.SetActive(false);
+            }
+        }
+    }
+
+    public void SetShieldTime()
+    {
+        shieldTime = 20.0f;
+    }
+
+    public void SetDamageTime()
+    {
+        damageTime = 15.0f;
+    }
+
+    void UpdateHealthbar()
+    {
+        float currHealth = playerHealth / maxHealth;
+        healthBar.transform.localScale = new Vector3(Mathf.Clamp(currHealth, 0f, 1f), healthBar.transform.localScale.y, healthBar.transform.localScale.z);
     }
 
     void Turn()
@@ -74,20 +150,23 @@ public class CharacterBehaviour : MonoBehaviour
 
     void Move()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+
+        if (Input.GetAxis("Vertical2") >= 0.3f && swinging != true && isBlocking != true)
         {
-            charAnim.SetBool("Walk", true);
+            if (runningSound.isPlaying != true)
+            {
+                runningSound.Play();
+            }
+        }
+        else
+        {
+            if(runningSound.isPlaying == true)
+            {
+                runningSound.Stop();
+            }
+
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            charAnim.SetBool("Walk", false);
-        }
-
-        //charAnim.SetFloat("Forward", Input.GetAxis("Vertical"));
-        charAnim.SetFloat("MoveZ", Input.GetAxis("Vertical2"));
-        charAnim.SetFloat("MoveX", Input.GetAxis("Horizontal2"));
-        //Debug.Log(Input.GetAxisRaw("Vertical") + ";;" + Input.GetAxis("Vertical"));
     }
 
     void Jump()
@@ -123,7 +202,7 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (swinging == false)
             {
-                
+
                 if (combo1Available == true)
                 {
                     swingSound2.PlayDelayed(0.9f);
@@ -197,7 +276,7 @@ public class CharacterBehaviour : MonoBehaviour
     IEnumerator ComboBoolReset()
     {
         yield return new WaitForSeconds(0.5f);
-       // Debug.Log("Combo Missed");
+        // Debug.Log("Combo Missed");
         //Debug.Break();
         if (combo1Available == true)
         {
@@ -239,21 +318,21 @@ public class CharacterBehaviour : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "Zombie")
         {
             Debug.Log("Enemy123");
             //enemColliders.Add(other);
             if (swinging == true || combo1AnimInProg == true || combo2AnimInProg == true)
             {
-                if(combo2AnimInProg == true)
+                if (combo2AnimInProg == true)
                 {
-                    other.gameObject.SendMessage("TakeDamage", playerDamage*2);
+                    other.gameObject.SendMessage("TakeDamage", playerDamage * 2);
                 }
                 else
                 {
                     other.gameObject.SendMessage("TakeDamage", playerDamage);
                 }
-                
+
             }
         }
     }
@@ -272,12 +351,13 @@ public class CharacterBehaviour : MonoBehaviour
         foreach (Collider o in enemColliders)
         {
             o.gameObject.SendMessage("TakeDamage", playerDamage);
+            enemyHitSound.Play();
         }
     }
 
     void TakeDamage(float damage)
     {
-        if(isBlocking != true)
+        if (isBlocking != true)
         {
             if (playerShield == true && shieldCount > 0)
             {
@@ -301,9 +381,16 @@ public class CharacterBehaviour : MonoBehaviour
         if (playerHealth <= 0)
         {
             charAnim.SetBool("IsDead", true);
-            SceneManager.LoadScene("MainMenu");
+            damageFlinchSound.Play();
+            StartCoroutine(DeathDelay());
 
         }
+    }
+
+    IEnumerator DeathDelay()
+    {
+        yield return new WaitForSeconds(2.0f);
+        SceneManager.LoadScene("MainMenu");
     }
 }
 

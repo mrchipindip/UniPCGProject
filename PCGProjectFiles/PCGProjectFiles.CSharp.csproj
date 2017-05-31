@@ -95,10 +95,12 @@
     <Compile Include="Assets\Scripts\Module.cs" />
     <Compile Include="Assets\Scripts\ModuleConnector.cs" />
     <Compile Include="Assets\Scripts\NPCFollowPlayer.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PowerUpActivate.cs" />
     <Compile Include="Assets\Scripts\PowerUpPickup.cs" />
     <Compile Include="Assets\Scripts\SkelController.cs" />
     <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
+    <Compile Include="Assets\Scripts\ZombControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Dungeon_Kit\Models\Doors_Gates\Animation_Info\steel_door_animation_list.txt" />
